@@ -97,3 +97,18 @@ with PoemFiles('poem.txt', 'r') as file:
 with PoemFiles('poem.txt', 'r') as file2:
   print(file2.read())
   print(" \n ---- Exception data below ---- \n ")
+#Introduction to Contextlib
+# Write your code below:
+
+
+
+
+
+
+
+
+
+# with poem_files('poem.txt', 'a') as opened_file:
+#  print('Inside yield')
+#  opened_file.write('Rose is beautiful, Just like you.')
+
