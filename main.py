@@ -1,4 +1,9 @@
+#Introduction to Resource Management
+#1/10 in Context Managers
+with open("file_name.txt", "w") as file:
+   file.write("How you gonna win when you ain't right within?")
 #A Familiar Face: The with Statement
+#2/10 in Context Managers
 try:
   open_file = open('file_name.txt', 'r')
   print(open_file.read())
@@ -9,6 +14,7 @@ with open('file_name.txt','r') as open_file:
   print(open_file.read())
 
 #Class Based Context Managers
+#3/10 in Context Managers
 # Write your code below: 
 class PoemFiles:
   def __init__(self):
@@ -22,6 +28,7 @@ with PoemFiles() as manager:
   print('Hope is the thing with feathers')
 
 #Class Based Context Managers II:
+#3/10 in Context Managers
 # Write your code below:
 class PoemFiles:
   def __init__(self, poem_file, mode):
@@ -42,6 +49,7 @@ with PoemFiles('poem.txt', 'w') as open_poem_file:
   open_poem_file.write('Hope is the thing with feathers')
 
 #Handling Exceptions I
+#4/10 in Context Managers
 class PoemFiles:
 
   def __init__(self, poem_file, mode):
@@ -71,6 +79,7 @@ with PoemFiles('poem.txt', 'r') as file2:
   print("---- Exception data below ----")
 
 #Handling Exceptions II
+#5/10 in Context Managers
 class PoemFiles:
 
   def __init__(self, poem_file, mode):
@@ -98,6 +107,7 @@ with PoemFiles('poem.txt', 'r') as file2:
   print(file2.read())
   print(" \n ---- Exception data below ---- \n ")
 #Introduction to Contextlib
+#6/10 in Context Managers
 # Write your code below:
 from contextlib import contextmanager
 
@@ -117,6 +127,7 @@ with poem_files('poem.txt', 'a') as opened_file:
 
 
 #Contextlib Error Handling
+#7/10 in Context Managers
 from contextlib import contextmanager
  
 @contextmanager
